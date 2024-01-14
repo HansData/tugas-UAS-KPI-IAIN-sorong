@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "name": "Ahmad Fajar Pamuji",
+    "youtube": "",
+    "filePDF": "",
+    "audio_mp3": "Ahmad_Fajar_Pamuji.mp3",
+    "theme_bg": "bg-[#E5AA10]",
+    "theme_text": "text-[#E5AA10]"
+  },
+  {
+    "id": 2,
+    "name": "Nur Haliza",
+    "youtube": "https://www.youtube.com/embed/Hl8wpvpEGC0?si=xz7pXqWmJU9jot7r",
+    "filePDF": "",
+    "audio_mp3": "",
+    "theme_bg": "bg-[#FF482C]",
+    "theme_text": "text-[#FF482C]"
+  },
+  {
+    "id": 3,
+    "name": "Nur Fitriah",
+    "youtube": "",
+    "filePDF": "visual-nur-fitriah.pdf",
+    "audio_mp3": "",
+    "theme_bg": "bg-[#91EE02]",
+    "theme_text": "text-[#91EE02]"
+  },
+  {
+    "id": 4,
+    "name": "Annisa Muthmainnah",
+    "youtube": "https://www.youtube.com/embed/3qbyLFyFzeQ?si=vz8wZsgUuMtIYkQN",
+    "filePDF": "",
+    "audio_mp3": "",
+    "theme_bg": "bg-[#09D00B]",
+    "theme_text": "text-[#09D00B]"
+  },
+  {
+    "id": 5,
+    "name": "Abdul Rizki",
+    "youtube": "https://www.youtube.com/embed/Al3bTBoNHzk?si=ONJslA9B3CaqZgyX",
+    "filePDF": "",
+    "audio_mp3": "",
+    "theme_bg": "bg-[#0AD8D0]",
+    "theme_text": "text-[#0AD8D0]"
+  },
+  {
+    "id": 6,
+    "name": "Ahmad Dwi Ghozali",
+    "youtube": "",
+    "filePDF": "visual-ahmad-dwi-ghozali.pdf",
+    "audio_mp3": "",
+    "theme_bg": "bg-[#C08E34]",
+    "theme_text": "text-[#C08E34]"
+  },
+  {
+    "id": 7,
+    "name": "Amrin Keliata",
+    "youtube": "",
+    "filePDF": "visual-amrin-keliata.pdf",
+    "audio_mp3": "",
+    "theme_bg": "bg-[#A573F4]",
+    "theme_text": "text-[#A573F4]"
+  },
+  {
+    "id": 8,
+    "name": "Yanto Keliata",
+    "youtube": "https://www.youtube.com/embed/fu8RwAdneZg?si=AvPIjNzq5oYx-PvF",
+    "filePDF": "",
+    "audio_mp3": "",
+    "theme_bg": "bg-[#AF4E4E]",
+    "theme_text": "text-[#AF4E4E]"
+  },
+  {
+    "id": 9,
+    "name": "Annisa Marliansyah",
+    "youtube": "",
+    "filePDF": "TEKNOLOGI-KOMUNIKASI-UAS_Annisa-Marliansyah.pdf",
+    "audio_mp3": "",
+    "theme_bg": "bg-[#FF6DAF]",
+    "theme_text": "text-[#FF6DAF]"
+  },
+  {
+    "id": 10,
+    "name": "Dhea Fatmawaty Lakoro",
+    "youtube": "https://www.youtube.com/embed/jAsnL4vMNQw?si=JBRFEomDt19CXEeO",
+    "filePDF": "",
+    "audio_mp3": "",
+    "theme_bg": "bg-[#6DAAFF]",
+    "theme_text": "text-[#6DAAFF]"
+  },
+  {
+    "id": 11,
+    "name": "Wahyudin Achmad",
+    "youtube": "https://www.youtube.com/embed/diDsC9GQRCo?si=2PrmMREwOTQrBQCn",
+    "filePDF": "",
+    "audio_mp3": "",
+    "theme_bg": "bg-[#4447B6]",
+    "theme_text": "text-[#4447B6]"
+  },
+  {
+    "id": 12,
+    "name": "Tono Suraparty Koswara",
+    "youtube": "https://www.youtube.com/embed/WCVm7UnV6VU?si=6uBig1W8FESZ2nt0",
+    "filePDF": "",
+    "audio_mp3": "",
+    "theme_bg": "bg-[#00C0B1]",
+    "theme_text": "text-[#00C0B1]"
+  },
+  {
+    "id": 13,
+    "name": "Munajar",
+    "youtube": "https://www.youtube.com/embed/a7p1iZ_2lK8?si=7RKXvLgmB8cDJE_S",
+    "filePDF": "",
+    "audio_mp3": "",
+    "theme_bg": "bg-[#B19470]",
+    "theme_text": "text-[#B19470]"
+  },
+  {
+    "id": 14,
+    "name": "Muhammad Fajrin",
+    "youtube": "https://www.youtube.com/embed/auQOu06w06U?si=w8ApiJaCWLzKlnLv",
+    "filePDF": "",
+    "audio_mp3": "",
+    "theme_bg": "bg-[#80BCBD]",
+    "theme_text": "text-[#80BCBD]"
+  }
+]

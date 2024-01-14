@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* !============================ */
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn-style {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.artikel::before {
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  left: -20px;
+  top: 0px;
+  border-radius: 99px 0px 0px 0px;
+  border-top: 20px solid #e2e8f0;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid transparent;
+}
+
+.font-Acme {
+  font-family: 'Acme', sans-serif;
+}
+
+.font-Vollkorn {
+  font-family: 'Alkatra', system-ui;
+}
+
+#navbar a.active {
+  background: #94a3b8;
+  border-radius: 8px;
+}
+
+.text-shadow {
+  text-shadow: 0px 0px 10px red, 0px 0px 30px red;
+}
+
+.box-shadow {
+  box-shadow: 0px 0px 30px 10px #adadad;
+}
