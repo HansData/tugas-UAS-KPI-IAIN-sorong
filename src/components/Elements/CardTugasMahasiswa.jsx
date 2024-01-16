@@ -5,7 +5,7 @@ import PlayAudio from './PlayAudio';
 import YoutubeIframe from './YoutubeIframe';
 
 const CardTugasMahasiswa = (props) => {
-  const { input } = props;
+  const { input, typeTugas } = props;
   const filterData = data.filter((elemen) => {
     if (input === '') {
       return elemen;
@@ -17,33 +17,15 @@ const CardTugasMahasiswa = (props) => {
   return (
     <>
       {filterData.map((item) => {
-        return (
-          <section key={item.id} className="self-start md:ml-5 lg:ml-10 flex mb-10">
-            <div className={`mr-5 w-[50px] h-[50px] rounded-full ${item.theme_bg} flex justify-center items-center border-slate-700 border-2`}>
-              <FaUser className="text-[25px] text-white" />
-            </div>
-            <article className="artikel relative bg-slate-200 rounded-md rounded-tl-none p-4 pt-0 shadow-xl">
-              <h1 className={`py-2 font-semibold ${item.theme_text}`}>{item.name}</h1>
-              <div className="p-2 rounded-md overflow-hidden">
-                {item.youtube !== '' && (
-                  <div className="mb-5">
-                    <YoutubeIframe src={item.youtube} />
-                  </div>
-                )}
-                {item.audio_mp3 !== '' && (
-                  <div>
-                    <PlayAudio src={item.audio_mp3}></PlayAudio>
-                  </div>
-                )}
-                {item.filePDF !== '' && (
-                  <div>
-                    <ViewPdf href={item.filePDF} />
-                  </div>
-                )}
+        if (typeTugas == item.type) {
+          return (
+            <section key={item.id}>
+              <div className="mb-5 shadow-xl rounded-md">
+                {item.type == 'video' ? <YoutubeIframe src={item.tugas} nama={item.name} /> : item.type == 'visual' ? <ViewPdf href={item.tugas} nama={item.name} /> : <PlayAudio src={item.tugas} nama={item.name}></PlayAudio>}
               </div>
-            </article>
-          </section>
-        );
+            </section>
+          );
+        }
       })}
     </>
   );

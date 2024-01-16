@@ -1,14 +1,15 @@
 const YoutubeIframe = (props) => {
-  const { src } = props;
+  const { src, nama } = props;
   return (
     <>
-      <div>
+      <div className="bg-white rounded-md overflow-hidden">
         <iframe
-          className=" rounded-md overflow-hidden w-[300px] h-[169px] sm:w-[420px] sm:h-[236px] md:w-[460px] md:h-[259px] lg:w-[614px] lg:h-[345px]"
+          className=" rounded-md overflow-hidden w-[350px] h-[199px]"
           src={src}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen></iframe>
+        <h1 className="font-semibold p-5  text-center">{nama}</h1>
       </div>
     </>
   );
