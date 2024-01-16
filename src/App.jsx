@@ -1,8 +1,8 @@
 // import NavbarSide from './components/Fragments/NavbarSide';
 import Home from './pages/home';
-import AudioPage from './pages/AudioPage';
-import VideoPage from './pages/VideoPage';
-import VisualPage from './pages/VisualPage';
+import AudioPage from './pages/audioPage';
+import VisualPage from './pages/visualPage';
+import VideoPage from './pages/pageVideo';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const halaman = createBrowserRouter([
