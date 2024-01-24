@@ -1,4 +1,4 @@
-const Artikel = () => {
+const ArtikelText = () => {
   return (
     <>
       <div className="px-[10%] mb-24">
@@ -11,6 +11,10 @@ const Artikel = () => {
           <span className="text-xl px-2">-</span>saat ini kita telah berada dalam zaman yang dimana didalam zaman tersebut, teknologi semakin canggih. seperti yang kita ketahui, teknologi dan komunikasi menjadi objek penting dalam proses
           canggihnya zaman sekarang. untuk lebih paham akan teknologi komunikasi zaman sekarang, mari kita bahas satu persatu.
         </p>
+        <figure className="my-5">
+          <img src="/image/digitaltech.png" alt="ilustrasi teknologi informasi" />
+          <figcaption className=" font-semibold text-xs italic">Sumber: aseancpa</figcaption>
+        </figure>
         <p className="mb-4 text-justify indent-8">
           Teknologi merupakan sebuah aplikasi pengetahuan untuk menciptakan sebuah alat, sistem atau semacam metode kerja dalam membantu kita untuk memecahkan sebuah masalah atau mencapai ke tujuan tertentu. teknologi juga bisa melibatkan
           berbagai hal, mulai dari alat sederhana seperti roda, hingga hal yang lebih modern seperti komputer, handphone,laptop, bahkan pesawat dan sebagainya. teknologi juga mencakup berbagai bidang, seperti teknologi komunikasi, teknologi
@@ -20,6 +24,12 @@ const Artikel = () => {
           Pada dasarnya, teknologi adalah alat yang kita gunakan untuk memperbaiki dunia kita. itu bisa berarrti dapat menciptakan produk yang lebih baik, mencapai keberhasilan dalam pekerjaan kita, atau membangun koneksi dengan orang lain.
           teknologi juga telah mempengaruhi hampir setiap aspek kehidupan kita, mulai dari cara kita belajar, berkomunikasi hingga cara kita bermain dan bersantai.
         </p>
+        <figure className="my-5  flex justify-center">
+          <div>
+            <img src="/image/image-artikel-3.png" alt="ilustrasi teknologi informasi" />
+            <figcaption className=" font-semibold text-xs italic">Sumber: https://sevima.com/transformasi-digital-mendukung-mbkm/</figcaption>
+          </div>
+        </figure>
         <p className="mb-4 text-justify indent-8">
           Tujuan dari teknologi adalah untuk mempermudah tugas manusia, meningkatkan efisiensi, meningkatkan produktivitas, dan memenuhi kebutuhan manusia dalam berbagai aspek kehidupan, seperti komunikasi, transportasi, kesehatan,
           pendidikan, dan lainnya.Teknologi terus berkembang seiring waktu, dengan inovasi dan penemuan baru yang terus muncul. Perkembangan teknologi telah membawa perubahan besar dalam masyarakat dan membuka pintu bagi kemajuan dalam
@@ -38,6 +48,12 @@ const Artikel = () => {
           komunikasi memiliki dampak positif dalam kehidupan sehari-hari kita. seperti Komunikasi yang Lebih Cepat, misalnya kita dapat berkomunikasi dengan orang-orang di seluruh dunia dalam hitungan detik melalui media sosial, seperti
           whatssapp, instagram, facebook, twitter dan sosial media lainnnya. panggilan suara, dan panggilan video dapat dilakukan dengan mudah dengan smartphone melalui sosial media.
         </p>
+        <figure className="my-5  flex justify-center">
+          <div>
+            <img src="/image/image-artikel-2.png" alt="ilustrasi teknologi informasi" />
+            <figcaption className=" font-semibold text-xs italic">Sumber: https://images.app.goo.gl/S6Zrzu7GRW28wr4G9</figcaption>
+          </div>
+        </figure>
         <p className="mb-4 text-justify indent-8">
           Selain untuk berkomunikasi, internet juga dapat membantu kita dalam mengakses berbagai informasi hanya dengan beberapa ketukan jari. Kita dapat mencari informasi, membaca berita, menonton video, dan belajar melalui platform
           online. Ini memberi kita akses ke pengetahuan dan sumber daya yang tak terbatas. dan juga ada peningkatan hubungan dan koneksi, Teknologi komunikasi memungkinkan kita untuk terhubung dengan orang-orang di seluruh dunia melalui
@@ -79,4 +95,4 @@ const Artikel = () => {
   );
 };
 
-export default Artikel;
+export default ArtikelText;

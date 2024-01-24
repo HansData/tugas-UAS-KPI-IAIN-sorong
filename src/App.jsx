@@ -3,6 +3,7 @@ import Home from './pages/home';
 import AudioPage from './pages/audioPage';
 import VisualPage from './pages/visualPage';
 import VideoPage from './pages/pageVideo';
+import Artikel from './pages/artikel';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const halaman = createBrowserRouter([
@@ -21,6 +22,10 @@ const halaman = createBrowserRouter([
   {
     path: '/audioPage',
     element: <AudioPage />,
+  },
+  {
+    path: '/artikelPage',
+    element: <Artikel />,
   },
 ]);
 

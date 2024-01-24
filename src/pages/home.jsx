@@ -1,15 +1,15 @@
 import ImageSwipe from '../components/Elements/ImageSwipe';
 import NavbarSide from '../components/Fragments/NavbarSide';
-import Artikel from '../components/Elements/Aritikel';
 import YoutubeIframe from '../components/Elements/YoutubeIframe';
 import ViewPdf from '../components/Elements/ViewPdf';
 import PlayAudio from '../components/Elements/PlayAudio';
 import data from '../json/tugas_mahasiswa.json';
+import CardArtikel from '../components/Elements/CardArtikel';
 
 const Home = () => {
   return (
     <>
-      <main className="bg-white w-screen h-max">
+      <main className="bg-white w-full h-max">
         <header className="w-full">
           <div className=" flex justify-between  px-5 py-2 bg-[#013e02]">
             <img src="/logo/logo_1.png" alt="logo kelas" className="w-16" />
@@ -26,31 +26,37 @@ const Home = () => {
         <section>
           <NavbarSide></NavbarSide>
         </section>
-        <article className="px-16">
-          <Artikel></Artikel>
-        </article>
-        <section className="bg-slate-200 px-16 pt-10 pb-10">
+        <article className="bg-white px-16 pt-10 pb-10">
           <div className="w-full text-center mb-10">
             <h1 className=" text-2xl font-bold font-Acme">PENGUMPULAN TUGAS UAS</h1>
           </div>
+          <div className="relative mb-10 border-b-2 border-black/10 pb-1.5">
+            <h1 className="font-2xl font-bold">TUGAS ARTIKEL</h1>
+            <span className="inline-block w-[50px] bg-blue-400 h-1.5 rounded-lg absolute buttom-0"></span>
+          </div>
+          <div>
+            <CardArtikel></CardArtikel>
+          </div>
+        </article>
+        <section className="bg-slate-200 px-16 pt-10 pb-10">
           <div>
             <div className="relative mb-10 border-b-2 border-black/10 pb-1.5">
               <h1 className="font-2xl font-bold">TUGAS VIDEO</h1>
               <span className="inline-block w-[50px] bg-blue-400 h-1.5 rounded-lg absolute buttom-0"></span>
             </div>
-            <div className="flex flex-wrap gap-5 mt-5 justify-center">
+            <ul className="flex flex-wrap gap-5 mt-5 justify-center">
               {data.map((item) => {
                 return (
                   <>
                     {item.type == 'video' && (
-                      <div key={item.id} className="mb-5 shadow-xl rounded-md">
+                      <li key={item.id} className="mb-5 shadow-xl rounded-md">
                         <YoutubeIframe src={item.tugas} nama={item.name} />
-                      </div>
+                      </li>
                     )}
                   </>
                 );
               })}
-            </div>
+            </ul>
           </div>
         </section>
         <section className="bg-white p-16">
@@ -59,19 +65,19 @@ const Home = () => {
               <h1 className="font-2xl font-bold">TUGAS VISUAL</h1>
               <span className="inline-block w-[50px] bg-blue-400 h-1.5 rounded-lg absolute buttom-0"></span>
             </div>
-            <div className="flex flex-wrap gap-5 mt-5 justify-center">
+            <ul className="flex flex-wrap gap-5 mt-5 justify-center">
               {data.map((item) => {
                 return (
                   <>
                     {item.type == 'visual' && (
-                      <div key={item.id} className="mb-5 shadow-xl rounded-md">
+                      <li key={item.id} className="mb-5 shadow-xl rounded-md">
                         <ViewPdf href={item.tugas} nama={item.name} />
-                      </div>
+                      </li>
                     )}
                   </>
                 );
               })}
-            </div>
+            </ul>
           </div>
         </section>
         <section className="bg-slate-200 p-16">
@@ -80,19 +86,19 @@ const Home = () => {
               <h1 className="font-2xl font-bold">TUGAS AUDIO</h1>
               <span className="inline-block w-[50px] bg-blue-400 h-1.5 rounded-lg absolute buttom-0"></span>
             </div>
-            <div className="flex flex-wrap gap-5 mt-5 justify-start ml-10">
+            <ul className="flex flex-wrap gap-5 mt-5 justify-start ml-10">
               {data.map((item) => {
                 return (
                   <>
                     {item.type == 'audio' && (
-                      <div key={item.id} className="mb-5 shadow-xl rounded-md overflow-hidden">
+                      <li key={item.id} className="mb-5 shadow-xl rounded-md overflow-hidden">
                         <PlayAudio src={item.tugas} nama={item.name}></PlayAudio>
-                      </div>
+                      </li>
                     )}
                   </>
                 );
               })}
-            </div>
+            </ul>
           </div>
         </section>
       </main>
